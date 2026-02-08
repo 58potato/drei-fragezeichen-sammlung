@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Die drei ??? Buchliste</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css?v=1.0">
+</head>
+<body>
+<div class="container">
+    <div class="header-section">
+        <h1>
+            <img src="images/logo.png" alt="Die drei ???" class="logo">
+        </h1>
+
+        <div class="header-controls">
+            <div class="overall-counter">
+                Gesamt: <span id="counter-overall">0 + 0 = 0 / 0</span>
+            </div>
+        </div>
+
+
+
+        <div class="header-bottom">
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-box grey"></div>
+                    <span>Hab ich nicht</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box green"></div>
+                    <span>Hab ich</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box gold"></div>
+                    <span>Tauschen</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box blue"></div>
+                    <span>Duplikat</span>
+                </div>
+
+            </div>
+            <div class="data-controls">
+                <button class="control-btn collapse-btn" id="collapseAllBtn">Alle zuklappen</button>
+                <button class="control-btn collapse-btn" id="expandAllBtn">Alle aufklappen</button>
+                <div class="theme-toggle" id="themeToggle" data-theme="light">
+                    <div class="theme-toggle-track">
+                        <div class="theme-toggle-slider"></div>
+                        <div class="theme-option" data-theme="light">
+                            <span>Hell</span>
+                        </div>
+                        <div class="theme-option" data-theme="dark">
+                            <span>Dunkel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="data-controls">
+                <button class="control-btn export-btn" id="exportBtn">Daten exportieren</button>
+                <button class="control-btn import-btn" id="importBtn">Daten importieren</button>
+                <button class="control-btn delete-btn" id="deleteBtn">Daten löschen</button>
+                <input type="file" id="importFile" accept=".json" style="display: none;">
+            </div>
+        </div>
+    </div>
+
+    <div class="grid" id="bookGrid"></div>
+</div>
+
+<button class="scroll-to-top" id="scrollToTopBtn" aria-label="Nach oben scrollen">
+    <img src="images/arrow_up.png" alt="Nach oben scrollen">
+</button>
+
+<div id="exportModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Daten exportieren</h2>
+            <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>Kopiere die JSON-Daten unten oder lade sie als Datei herunter:</p>
+            <label for="exportData" class="visually-hidden">Export-Daten JSON</label>
+            <textarea id="exportData" readonly></textarea>
+            <div class="modal-actions">
+                <button class="control-btn copy-btn" id="copyBtn">In Zwischenablage kopieren</button>
+                <button class="control-btn download-btn" id="downloadBtn">Datei herunterladen</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="messageModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="messageTitle">Daten importieren</h2>
+            <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p id="messageText"></p>
+            <div class="modal-actions" id="messageActions"></div>
+        </div>
+    </div>
+</div>
+
+<script src="buecher-data.js?v=1.0"></script>
+<script src="script.js?v=1.0"></script>
+</body>
+</html>
