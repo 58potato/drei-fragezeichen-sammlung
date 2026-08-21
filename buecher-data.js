@@ -255,11 +255,17 @@ const books = [
     { id: 'buch_236', name: 'und das Fantasmofon', series: 'neuzeit' },
     { id: 'buch_237', name: 'Im Bann des Barrakudas', series: 'neuzeit' },
     { id: 'buch_238', name: 'und der rote Büffel', series: 'neuzeit' },
-    { id: 'buch_239', name: 'Das Geheimnis der sieben Palmen', series: 'neuzeit' },
-    { id: 'buch_240', name: 'Falsche Schuld', series: 'neuzeit' },
-    { id: 'buch_241', name: 'Meister des Lichts', series: 'neuzeit' },
-    { id: 'buch_242', name: 'und das weiße Auge', series: 'neuzeit' },
-    { id: 'buch_243', name: 'und die schwarze Rose', series: 'neuzeit' },
+    { id: 'buch_239', name: 'Falsche Schuld', series: 'neuzeit' },
+    { id: 'buch_240', name: 'Das Geheimnis der sieben Palmen', series: 'neuzeit' },
+    { id: 'buch_241', name: 'und die schwarze Rose', series: 'neuzeit' },
+    { id: 'buch_242', name: 'Meister des Lichts', series: 'neuzeit' },
+    { id: 'buch_243', name: 'und das weiße Auge', series: 'neuzeit' },
+    { id: 'buch_244', name: 'Fußball-Skandal', series: 'neuzeit' },
+    { id: 'buch_245', name: 'Das Lied der Knochenflöte', series: 'neuzeit' },
+    { id: 'buch_246', name: 'Rätsel des Mondes', series: 'neuzeit' },
+    { id: 'buch_247', name: 'Spuk in Hollywood', series: 'neuzeit' },
+    { id: 'buch_248', name: 'im Griff der Sandgeister', series: 'neuzeit' },
+    { id: 'buch_249', name: 'Unter Verdacht', series: 'neuzeit' },
 
     // Die drei ??? - Sonderausgaben
     { id: 'buch_400', name: 'und die Geisterlampe', series: 'sonderausgaben' },
@@ -318,6 +324,10 @@ const books = [
     { id: 'buch_453', name: 'Phantom Highway - Graphic Novel', series: 'sonderausgaben' },
     { id: 'buch_454', name: 'Die Auferstehung', series: 'sonderausgaben' },
     { id: 'buch_455', name: 'O Geisterbaum', series: 'sonderausgaben' },
+    { id: 'buch_456', name: 'Nacht in der Tiefe', series: 'sonderausgaben' },
+    { id: 'buch_457', name: 'Rocky Beach Crimes - Salto mortale', series: 'sonderausgaben' },
+    { id: 'buch_458', name: 'Peter Shaw - Graphic Novel', series: 'sonderausgaben' },
+    { id: 'buch_459', name: 'Leise rieselt das Grauen', series: 'sonderausgaben' },
 
     // Die drei ??? – Sammelbände
     { id: 'sammel_01', name: 'Hochspannung x 3', series: 'sammelbaende' },
@@ -485,6 +495,10 @@ const books = [
     { id: 'kids_103', name: 'SOS im Bike-Park', series: 'kids' },
     { id: 'kids_104', name: 'Teuflische Küche', series: 'kids' },
     { id: 'kids_105', name: 'Fiese Fälscherbande', series: 'kids' },
+    { id: 'kids_106', name: 'Miese Doppelgänger', series: 'kids' },
+    { id: 'kids_107', name: 'Fußball-Spione', series: 'kids' },
+    { id: 'kids_108', name: 'Piraten in Rocky Beach', series: 'kids' },
+    { id: 'kids_109', name: 'Fluch der Mumie', series: 'kids' },
 
     // Die drei ??? Kids - Ratekrimis
     { id: 'rate_01', name: 'Geheime Flaschenpost', series: 'kids_rate' },
@@ -623,6 +637,12 @@ const books = [
     { id: 'kids_sonder_84', name: 'Mission Piraten-Code', series: 'kids_sonder' },
     { id: 'kids_sonder_85', name: 'Bücherhelden - Vorsicht Ninjas!', series: 'kids_sonder' },
     { id: 'kids_sonder_86', name: 'Der Adventskalender 2025', series: 'kids_sonder' },
+    { id: 'kids_sonder_87', name: 'Gefangen in CubeMax', series: 'kids_sonder' },
+    { id: 'kids_sonder_88', name: 'Das Dino-Geheimnis', series: 'kids_sonder' },
+    { id: 'kids_sonder_89', name: 'Abenteuer in Rocky Beach - Comic', series: 'kids_sonder' },
+    { id: 'kids_sonder_90', name: 'Bücherhelden - Vulkan in Rocky Beach', series: 'kids_sonder' },
+    { id: 'kids_sonder_91', name: 'Bücherhelden - Spuk in der Wüste', series: 'kids_sonder' },
+    { id: 'kids_sonder_92', name: 'CubeMax in Gefahr', series: 'kids_sonder' },
 
     // Die drei ??? Kids – Minibände
     { id: 'kids_mini_01', name: 'Piraten an Bord', series: 'kids_mini' },
